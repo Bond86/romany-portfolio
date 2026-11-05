@@ -39,7 +39,7 @@ def generate(designed):
     story.append(PageBreak())
     add('SELECTED PROJECTS','SectionR')
     for p in projects:
-        if p['slug'] not in ['interactive-museum','pushcraft','mobile-3d-map','unity-tools','educational-content']:continue
+        if p['slug'] not in ['interactive-museum','prime-press-e-kit','pushcraft','mobile-3d-map','unity-tools','educational-content']:continue
         story.append(KeepTogether([para(p['name']+' | '+p['status'],'JobR'),para(p['summary'])]))
     add('TECHNICAL SKILLS','SectionR')
     for s in profile['skills']:add(s['name'],'JobR');add(', '.join(s['items']))

@@ -2,7 +2,7 @@
 
 Live website: https://bond86.github.io/romany-portfolio/
 
-A responsive React + TypeScript + Vite portfolio with a media-led editorial homepage, eight project case studies, thirteen verified YouTube demonstrations and five original Behance/Adobe films, searchable work and skills, career timeline, online CV, two generated PDFs, light/dark themes and static route metadata.
+A responsive React + TypeScript + Vite portfolio with a media-led editorial homepage, nine project case studies, thirteen verified YouTube demonstrations and five original Behance/Adobe films, searchable work and skills, career timeline, online CV, two generated PDFs, light/dark themes and static route metadata.
 
 ## Run
 
@@ -73,4 +73,5 @@ The manual **Refresh approved video metadata** workflow reads a GitHub Actions s
 Warm paper backgrounds, forest green, yellow accents and Manrope/DM Sans typography. The homepage leads with actual project footage. No stock screenshots or fabricated project media. Motion respects reduced-motion preferences. No WebGL dependency is loaded. Video players are created only after activation, using YouTube’s privacy-enhanced domain or the original Adobe player for Behance films. Native dialogs support focus containment and Escape. Contact creates a mail draft rather than pretending to submit a form.
 
 Validation: strict TypeScript, ESLint, content/media/PDF tests, static-route verification and browser checks across mobile, tablet and desktop. No Lighthouse score is claimed.
+
 

@@ -1,8 +1,8 @@
 [
   {
     "slug": "interactive-museum",
-    "title": "Museum experiences, built to explore.",
-    "name": "Prophet’s Biography Museum",
+    "title": "A complete museum experience system.",
+    "name": "Museum Experience & Display Management System",
     "category": "Interactive Applications",
     "tags": [
       "XR / VR / AR",
@@ -15,26 +15,73 @@
     "featured": true,
     "published": true,
     "role": "Unity developer / Software engineer",
-    "platform": "Cross-platform Unity; targets vary by deployment",
-    "summary": "Unity-based museum experiences combining touchscreens, interactive navigation and multimedia storytelling. Demonstrated in my KSA Behance showcase.",
-    "challenge": "Bring spatial navigation and varied content together in an interface suited to interactive displays.",
-    "solution": "Combine 2D/3D maps, information panels and multimedia galleries with touchscreen navigation and configurable content.",
+    "platform": "Museum and exhibition screens; mobile applications; platform support varies by deployment",
+    "summary": "A complete Unity-based system for designing, operating and controlling museum displays, with remote control and experiences delivered on mobile devices or exhibition screens. Includes work for the Prophet’s Biography Museum.",
+    "challenge": "Bring content design, display operation, visitor interaction and remote control together in a system that can serve both physical exhibitions and mobile experiences.",
+    "solution": "Develop an integrated museum software system for configuring and designing screen experiences, running interactive content and controlling displays remotely. Deliver the experience through exhibition screens or mobile applications, including commercially distributed mobile editions where applicable.",
     "features": [
-      "2D and 3D maps",
-      "Images, video and information panels",
-      "Multilingual content",
-      "JSON/API configuration",
-      "Remote content updates",
-      "Touchscreen navigation"
+      "Screen experience design and configuration",
+      "Museum display operation and presentation",
+      "Remote display and interaction control",
+      "Mobile application delivery",
+      "Exhibition and touchscreen displays",
+      "2D/3D maps and spatial navigation",
+      "Multimedia galleries and multilingual content",
+      "JSON/API content configuration and remote updates"
     ],
-    "implementation": "Built with Unity and C#, with interactive maps, multimedia interfaces and JSON/API-driven content workflows. The KSA showcase presents both visitor-facing displays and virtual navigation.",
+    "implementation": "Built with Unity and C#, combining reusable interfaces, multimedia playback, interactive navigation and configurable content systems. The software supports multiple presentation and control setups; individual deployments use the platforms and features appropriate to the venue.",
     "videos": [
       "PtBtphgHb9n",
       "Ctmsq2Uw6HS"
     ],
     "visual": "museum",
-    "outcome": "Interactive exhibition content and navigation systems, demonstrated through real visitor displays and virtual environments.",
+    "outcome": "A unified system for managing and presenting museum experiences across exhibition displays and mobile applications, including work for the Prophet’s Biography Museum. Public KSA videos demonstrate selected parts of the work.",
     "image": "ksa-PtBtphgHb9n"
+  },
+  {
+    "slug": "prime-press-e-kit",
+    "title": "Learning, brought to life.",
+    "name": "Prime Press E-Kit",
+    "category": "Educational Technology",
+    "tags": [
+      "Interactive learning",
+      "Educational games",
+      "Classroom tools",
+      "Digital publishing"
+    ],
+    "status": "Published platform · portfolio contribution",
+    "featured": true,
+    "published": true,
+    "role": "Interactive educational software development, classroom tools and digital content",
+    "platform": "Android; desktop editions linked by Prime Press",
+    "image": "U5lkFF6gRvc",
+    "summary": "An interactive learning platform from Prime Press, combining digital coursebooks, workbooks, multimedia activities and classroom tools. My portfolio demonstrates E-Kit classroom-tool development, including V1 and Android V2.",
+    "challenge": "Turn educational publishing content into practical digital experiences that support teaching, independent practice and classroom interaction.",
+    "solution": "My contribution includes interactive educational content and classroom tools, demonstrated in the E-Kit V1 and Android V2 portfolio videos. The wider platform combines enhanced digital books, exercises, multimedia and teacher/student workflows.",
+    "features": [
+      "Interactive coursebooks and workbooks",
+      "Clickable exercises with immediate scores",
+      "Embedded video and audio learning resources",
+      "Educational games and classroom tools",
+      "Teacher workspace for assignments and progress tracking",
+      "Class management and student enrolment"
+    ],
+    "implementation": "My documented work covers interactive educational software, activities, multimedia resources and reusable classroom tools as part of the Prime Press product team. The feature list describes the current publisher product; it does not imply that I personally implemented every feature or later release.",
+    "videos": [
+      "U5lkFF6gRvc",
+      "5iDkEmcCmVw"
+    ],
+    "outcome": "A contribution to the Prime Press digital education portfolio. Original demonstrations show my E-Kit work; the official publisher and Google Play listing describe the broader platform and current availability.",
+    "externalLinks": [
+      {
+        "label": "Prime Press — official publisher",
+        "url": "https://primepress.com/"
+      },
+      {
+        "label": "Prime Press E-Kit on Google Play",
+        "url": "https://play.google.com/store/apps/details?id=com.PrimePress.PrimePressEKit"
+      }
+    ]
   },
   {
     "slug": "educational-content",
