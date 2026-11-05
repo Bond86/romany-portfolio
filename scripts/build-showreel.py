@@ -64,7 +64,7 @@ def title_card(path,heading,subtitle,footer):
     im.save(path)
 
 title_card(WORK/'intro.png','ROMANY SAMIR','Software Engineer / Unity Developer','MUSEUMS   /   XR   /   EDUCATION   /   GAMES')
-title_card(WORK/'outro.png','LET’S BUILD.','Software engineering. Interactive experiences.','bond86.github.io/romany-portfolio   /   rsks_86@yahoo.com')
+title_card(WORK/'outro.png','LET’S BUILD.','Software engineering. Interactive experiences.','romanysamir.com   /   rsks_86@yahoo.com')
 
 # Exact frame counts: intro 60 + Adobe 600 + YouTube 780 + stills 300 + outro 60 = 1800.
 cuts=[
