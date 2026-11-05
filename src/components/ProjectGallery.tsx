@@ -1,0 +1,2 @@
+import ImagePreview from './ImagePreview';
+export default function ProjectGallery({items}:{items:{src:string,alt:string,caption:string}[]}){return <section className="project-gallery" aria-label="Project image gallery">{items.map(item=><figure key={item.src}><div><ImagePreview src={`${import.meta.env.BASE_URL}${item.src}`} alt={item.alt}/></div><figcaption>{item.caption}</figcaption></figure>)}</section>;}

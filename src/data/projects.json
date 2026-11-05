@@ -124,7 +124,7 @@
   },
   {
     "slug": "pushcraft",
-    "title": "Small moves. Big puzzles.",
+    "title": "Think. Push. Craft.",
     "name": "Pushcraft",
     "category": "Game Development",
     "tags": [
@@ -136,21 +136,36 @@
     "status": "In development",
     "featured": true,
     "published": true,
-    "role": "Game developer",
-    "platform": "PC-oriented development",
-    "summary": "A top-down 3D puzzle game exploring box interactions, environmental challenges and handcrafted levels, with level editor work.",
-    "challenge": "Create interdependent puzzles with readable interactions and a flexible authoring workflow.",
-    "solution": "Develop gameplay and puzzle systems in Unity/C#, alongside tools for creating and iterating on levels.",
+    "role": "Game development, gameplay systems and in-game level editor",
+    "platform": "PC development · Unity / C#",
+    "summary": "A single-player, grid-based 3D logic puzzle game about planning, positioning and chain reactions. Deliver crates to their targets, then build, test and share your own puzzles with the in-game level editor.",
+    "challenge": "Create readable, interconnected puzzles where the order of actions matters, while giving players practical tools to build and test their own levels.",
+    "solution": "Develop step-based gameplay: players study the board, plan a route and combine the behaviour of crates, tiles and machinery to complete every target. Campaign progression sits alongside an integrated editor for creating, testing, saving and exchanging custom levels.",
     "features": [
-      "Top-down 3D puzzle gameplay",
-      "Box interactions",
-      "Handcrafted levels",
-      "Level editor development"
+      "Single-player, step-based 3D logic puzzles",
+      "Grid-based movement and crate delivery",
+      "Interconnected objects and chain reactions",
+      "Campaign progression across themed environments",
+      "Built-in level editor with test play",
+      "Custom level saving, import and export"
     ],
-    "implementation": "Unity and C# are confirmed. Unreleased mechanics, internal architecture and community feature plans are intentionally omitted.",
+    "implementation": "Built in Unity and C#. My work covers grid movement, turn-based interaction systems, objectives and campaign progression, game interfaces, and a player-facing level editor. Most gameplay counters advance with successful actions, allowing players to think between moves.",
     "videos": [],
     "visual": "puzzle",
-    "outcome": "An in-development game and tooling project. No release, store availability or commercial results are claimed."
+    "outcome": "An in-development game with playable puzzle content and an integrated level editor. The images show actual project gameplay, editor UI and project key art; no commercial launch or live Steam service is claimed.",
+    "image": "pushcraft-gameplay",
+    "gallery": [
+      {
+        "src": "media/projects/pushcraft-editor.jpg",
+        "alt": "Pushcraft built-in level editor showing tools, properties and test play",
+        "caption": "The in-game level editor — build, configure and test a puzzle."
+      },
+      {
+        "src": "media/projects/pushcraft-key-art.jpg",
+        "alt": "Pushcraft project key art with the game title and crate puzzle illustration",
+        "caption": "Project key art — promotional illustration, not a gameplay screenshot."
+      }
+    ]
   },
   {
     "slug": "mobile-3d-map",
