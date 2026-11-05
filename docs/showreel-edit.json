@@ -1,0 +1,184 @@
+{
+  "durationSeconds": 60,
+  "frames": 1800,
+  "fps": 30,
+  "resolution": "1280x720",
+  "audio": "Original code-synthesized instrumental pulse; source audio removed",
+  "cuts": [
+    {
+      "still": "intro.png",
+      "frames": 60,
+      "label": "",
+      "detail": ""
+    },
+    {
+      "id": "PtBtphgHb9n",
+      "fraction": 0.4,
+      "frames": 120,
+      "label": "MUSEUM SYSTEMS",
+      "detail": "Interactive exhibits / Prophet’s Biography Museum",
+      "sourceStartSeconds": 61.96
+    },
+    {
+      "id": "Ctmsq2Uw6HS",
+      "fraction": 0.4,
+      "frames": 120,
+      "label": "VIRTUAL EXHIBITIONS",
+      "detail": "3D navigation / Interactive content",
+      "sourceStartSeconds": 15.984
+    },
+    {
+      "id": "QGKLWX9nWem",
+      "fraction": 0.7,
+      "frames": 120,
+      "label": "MOBILE-CONTROLLED 3D MAPS",
+      "detail": "Large-display interaction / Unity",
+      "sourceStartSeconds": 38.08
+    },
+    {
+      "id": "GYfPDkxUJX9",
+      "fraction": 0.7,
+      "frames": 120,
+      "label": "IMMERSIVE EXPLORATION",
+      "detail": "VR / Interactive 3D models",
+      "sourceStartSeconds": 97.006
+    },
+    {
+      "id": "TxiQpTfssKy",
+      "fraction": 0.4,
+      "frames": 120,
+      "label": "3D WALKTHROUGHS",
+      "detail": "Navigable spaces / Unity",
+      "sourceStartSeconds": 12.8
+    },
+    {
+      "id": "U5lkFF6gRvc",
+      "fraction": 0.15,
+      "frames": 60,
+      "label": "PRIME PRESS E-KIT",
+      "detail": "Android / Interactive classroom tools",
+      "sourceStartSeconds": 14.562
+    },
+    {
+      "id": "5iDkEmcCmVw",
+      "fraction": 0.4,
+      "frames": 60,
+      "label": "CLASSROOM TOOLS",
+      "detail": "Prime Press E-Kit / V1 demonstration",
+      "sourceStartSeconds": 132.708
+    },
+    {
+      "id": "pBzIDb4jhnQ",
+      "fraction": 0.4,
+      "frames": 60,
+      "label": "EDUCATIONAL GAMES",
+      "detail": "Journeys / Learning through play",
+      "sourceStartSeconds": 58.116
+    },
+    {
+      "id": "lKY5Vk5b3k4",
+      "fraction": 0.4,
+      "frames": 60,
+      "label": "PHONICS",
+      "detail": "Games / Interactive learning content",
+      "sourceStartSeconds": 93.196
+    },
+    {
+      "id": "sP_ZczrpTdM",
+      "fraction": 0.4,
+      "frames": 60,
+      "label": "STORIES + PUZZLES",
+      "detail": "Crime Scene / Interactive activities",
+      "sourceStartSeconds": 93.792
+    },
+    {
+      "id": "nPnWZgPQ_1I",
+      "fraction": 0.4,
+      "frames": 60,
+      "label": "YOUNG LEARNERS",
+      "detail": "Story-based games / Puzzle activities",
+      "sourceStartSeconds": 50.268
+    },
+    {
+      "id": "XSZCX61SM8w",
+      "fraction": 0.4,
+      "frames": 60,
+      "label": "SOCIAL LEARNING",
+      "detail": "Learn while you play",
+      "sourceStartSeconds": 224.436
+    },
+    {
+      "id": "eerSTcCXSF0",
+      "fraction": 0.15,
+      "frames": 60,
+      "label": "NUMERACY",
+      "detail": "Interactive games / Exercises",
+      "sourceStartSeconds": 61.617
+    },
+    {
+      "id": "N2zaSRNP0xc",
+      "fraction": 0.4,
+      "frames": 60,
+      "label": "SCIENCE TOUR",
+      "detail": "Exploration / Educational content",
+      "sourceStartSeconds": 154.708
+    },
+    {
+      "id": "_0j8CvajLI0",
+      "fraction": 0.15,
+      "frames": 60,
+      "label": "DIGITAL READING",
+      "detail": "Interactive HTML5 e-books",
+      "sourceStartSeconds": 35.645
+    },
+    {
+      "id": "-2f-1pTzPbU",
+      "fraction": 0.7,
+      "frames": 60,
+      "label": "CLASSIC E-BOOKS",
+      "detail": "Multimedia reading experiences",
+      "sourceStartSeconds": 79.597
+    },
+    {
+      "id": "ZexIK1AG1e0",
+      "fraction": 0.7,
+      "frames": 60,
+      "label": "PHONICS + BLENDING",
+      "detail": "Stepping Stone / Classroom learning",
+      "sourceStartSeconds": 92.729
+    },
+    {
+      "id": "nTWKmcNGJts",
+      "fraction": 0.7,
+      "frames": 60,
+      "label": "INTERACTIVE STORIES",
+      "detail": "Storyland / Puzzles and games",
+      "sourceStartSeconds": 94.129
+    },
+    {
+      "image": "pushcraft-gameplay.jpg",
+      "frames": 120,
+      "label": "PUSHCRAFT",
+      "detail": "Step-based 3D logic puzzles / Gameplay screenshot"
+    },
+    {
+      "image": "pushcraft-editor.jpg",
+      "frames": 90,
+      "label": "BUILD + TEST + SHARE",
+      "detail": "Pushcraft / In-game level editor screenshot"
+    },
+    {
+      "image": "pushcraft-key-art.jpg",
+      "frames": 90,
+      "label": "THINK. PUSH. CRAFT.",
+      "detail": "Pushcraft / Project key art / In development"
+    },
+    {
+      "still": "outro.png",
+      "frames": 60,
+      "label": "",
+      "detail": ""
+    }
+  ],
+  "note": "Pushcraft uses explicitly labeled gameplay/editor stills and project key art, not a claimed gameplay recording."
+}

@@ -64,6 +64,8 @@ npm run build
 
 ## Media updates
 
+The first video is an exactly 60-second edited portfolio reel. See `docs/showreel.md` for its original-footage sources, edit list, native player, original synthesized soundtrack and rebuild instructions. The final MP4 and poster are committed under `public/media/showreel/`; raw inputs and editing tools remain in ignored `tmp/`.
+
 `npm run sync:videos` uses the official YouTube Data API only when `YOUTUBE_API_KEY` is provided in the environment. Without a key it retains the working committed manifest. Failures leave the existing file intact. Only approved mapped videos are updated; new uploads need editorial review. Do not prefix the key with `VITE_` or put it in frontend files.
 
 The manual **Refresh approved video metadata** workflow reads a GitHub Actions secret named `YOUTUBE_API_KEY` and commits manifest changes. A workflow-token push does not automatically trigger a second workflow: run the Pages workflow after reviewing a refresh. No scheduled automatic publication is enabled. Behance updates are manual; no unsupported API or runtime scraper is used.

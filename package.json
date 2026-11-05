@@ -10,7 +10,7 @@
     "build": "npm run check && vite build && node scripts/postbuild.mjs",
     "preview": "vite preview --host 127.0.0.1",
     "sync:videos": "node scripts/sync-videos.mjs",
-    "test": "node --test tests/content.test.mjs"
+    "test": "node --test tests/content.test.mjs tests/showreel.test.mjs"
   },
   "dependencies": {
     "lucide-react": "1.69.0",
