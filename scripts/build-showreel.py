@@ -64,7 +64,7 @@ def title_card(path,heading,subtitle,footer):
     im.save(path)
 
 title_card(WORK/'intro.png','ROMANY SAMIR','Software Engineer / Unity Developer','MUSEUMS   /   XR   /   EDUCATION   /   GAMES')
-title_card(WORK/'outro.png','LET’S BUILD.','Software engineering. Interactive experiences.','romanysamir.com   /   rsks_86@yahoo.com')
+title_card(WORK/'outro.png','LET’S BUILD.','Software engineering. Interactive experiences.','bond86.github.io/romany-portfolio   /   rsks_86@yahoo.com')
 
 # Exact frame counts: intro 60 + Adobe 600 + YouTube 780 + stills 300 + outro 60 = 1800.
 cuts=[
@@ -113,6 +113,8 @@ def render(index_cut):
     else:vf+=f',fade=t=in:st=0:d=0.18,fade=t=out:st={seconds-.18}:d=0.18'
     vf+=',format=yuv420p'
     output=WORK/f'cut-{index:02d}.mp4'
+    if '--reuse-cuts' in sys.argv and output.exists() and cut.get('still')!='outro.png':
+        return output
     run([*inputs,'-an','-vf',vf,'-frames:v',cut['frames'],'-c:v','libx264','-preset','fast','-crf','21','-maxrate','4M','-bufsize','8M','-threads','2','-video_track_timescale','15360',output])
     print(f'Rendered {index+1}/{len(cuts)}: {cut.get("label") or cut.get("still")}',flush=True)
     return output
