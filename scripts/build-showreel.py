@@ -63,6 +63,8 @@ def title_card(path,heading,subtitle,footer):
     draw.text((1090,82),'01:00',font=ImageFont.truetype(str(FONT),25),fill='#c7dfcf')
     im.save(path)
 
+title_card(OUTPUT/'pushcraft-teaser.png','PUSHCRAFT','Coming soon.','IN DEVELOPMENT')
+
 title_card(WORK/'intro.png','ROMANY SAMIR','Software Engineer / Unity Developer','MUSEUMS   /   XR   /   EDUCATION   /   GAMES')
 title_card(WORK/'outro.png','LET’S BUILD.','Software engineering. Interactive experiences.','romanysamir.com   /   rsks_86@yahoo.com')
 
@@ -87,9 +89,9 @@ cuts=[
  {'id':'-2f-1pTzPbU','fraction':.7,'frames':60,'label':'CLASSIC E-BOOKS','detail':'Multimedia reading experiences'},
  {'id':'ZexIK1AG1e0','fraction':.7,'frames':60,'label':'PHONICS + BLENDING','detail':'Stepping Stone / Classroom learning'},
  {'id':'nTWKmcNGJts','fraction':.7,'frames':60,'label':'INTERACTIVE STORIES','detail':'Storyland / Puzzles and games'},
- {'image':'pushcraft-gameplay.jpg','frames':120,'label':'PUSHCRAFT','detail':'Step-based 3D logic puzzles / Gameplay screenshot'},
- {'image':'pushcraft-editor.jpg','frames':90,'label':'BUILD + TEST + SHARE','detail':'Pushcraft / In-game level editor screenshot'},
- {'image':'pushcraft-key-art.jpg','frames':90,'label':'THINK. PUSH. CRAFT.','detail':'Pushcraft / Project key art / In development'},
+ {'image':'../showreel/pushcraft-teaser.png','frames':120,'label':'PUSHCRAFT','detail':'Coming soon / In development'},
+ {'image':'../showreel/pushcraft-teaser.png','frames':90,'label':'PUSHCRAFT','detail':'Coming soon / In development'},
+ {'image':'../showreel/pushcraft-teaser.png','frames':90,'label':'PUSHCRAFT','detail':'Coming soon / In development'},
  {'still':'outro.png','frames':60,'label':'','detail':''}
 ]
 assert sum(c['frames'] for c in cuts)==1800
@@ -113,7 +115,7 @@ def render(index_cut):
     else:vf+=f',fade=t=in:st=0:d=0.18,fade=t=out:st={seconds-.18}:d=0.18'
     vf+=',format=yuv420p'
     output=WORK/f'cut-{index:02d}.mp4'
-    if '--reuse-cuts' in sys.argv and output.exists() and cut.get('still')!='outro.png':
+    if '--reuse-cuts' in sys.argv and output.exists() and cut.get('still')!='outro.png' and 'image' not in cut:
         return output
     run([*inputs,'-an','-vf',vf,'-frames:v',cut['frames'],'-c:v','libx264','-preset','fast','-crf','21','-maxrate','4M','-bufsize','8M','-threads','2','-video_track_timescale','15360',output])
     print(f'Rendered {index+1}/{len(cuts)}: {cut.get("label") or cut.get("still")}',flush=True)
@@ -145,7 +147,7 @@ final=OUTPUT/'romany-samir-showreel.mp4'
 run(['-f','concat','-safe','0','-i',WORK/'concat.txt','-i',WORK/'original-score.wav','-map','0:v:0','-map','1:a:0','-c:v','copy','-c:a','aac','-b:a','128k','-ac','2','-t','60','-movflags','+faststart',final])
 assert abs(duration(final)-60)<.06
 run(['-v','error','-xerror','-i',final,'-f','null','-'])
-manifest={'durationSeconds':60,'frames':1800,'fps':30,'resolution':'1280x720','audio':'Original code-synthesized instrumental pulse; source audio removed','cuts':cuts,'note':'Pushcraft uses explicitly labeled gameplay/editor stills and project key art, not a claimed gameplay recording.'}
+manifest={'durationSeconds':60,'frames':1800,'fps':30,'resolution':'1280x720','audio':'Original code-synthesized instrumental pulse; source audio removed','cuts':cuts,'note':'Pushcraft is represented only by non-revealing coming-soon title cards.'}
 (ROOT/'docs/showreel-edit.json').write_text(json.dumps(manifest,indent=2,ensure_ascii=False)+'\n',encoding='utf-8')
 for second in [2.5,10.5,23,38,49,53]:run(['-ss',second,'-i',final,'-frames:v','1',WORK/f'final-{second}.jpg'])
 poster=Image.new('RGB',(1280,720),'#142d27')

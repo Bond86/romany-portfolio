@@ -156,22 +156,22 @@
       "sourceStartSeconds": 94.129
     },
     {
-      "image": "pushcraft-gameplay.jpg",
+      "image": "../showreel/pushcraft-teaser.png",
       "frames": 120,
       "label": "PUSHCRAFT",
-      "detail": "Step-based 3D logic puzzles / Gameplay screenshot"
+      "detail": "Coming soon / In development"
     },
     {
-      "image": "pushcraft-editor.jpg",
+      "image": "../showreel/pushcraft-teaser.png",
       "frames": 90,
-      "label": "BUILD + TEST + SHARE",
-      "detail": "Pushcraft / In-game level editor screenshot"
+      "label": "PUSHCRAFT",
+      "detail": "Coming soon / In development"
     },
     {
-      "image": "pushcraft-key-art.jpg",
+      "image": "../showreel/pushcraft-teaser.png",
       "frames": 90,
-      "label": "THINK. PUSH. CRAFT.",
-      "detail": "Pushcraft / Project key art / In development"
+      "label": "PUSHCRAFT",
+      "detail": "Coming soon / In development"
     },
     {
       "still": "outro.png",
@@ -180,5 +180,5 @@
       "detail": ""
     }
   ],
-  "note": "Pushcraft uses explicitly labeled gameplay/editor stills and project key art, not a claimed gameplay recording."
+  "note": "Pushcraft is represented only by non-revealing coming-soon title cards."
 }

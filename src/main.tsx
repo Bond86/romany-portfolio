@@ -14,7 +14,7 @@ export const projects = projectsData.filter(p => p.published);
 export type Project = typeof projectsData[number];
 export type Video = typeof videos[number];
 export const asset = (path: string) => `${import.meta.env.BASE_URL}${path}`;
-export const image = (id: string) => asset(`media/projects/${id}.jpg`);
+export const image = (id: string) => asset(`media/projects/${id}.${id==='pushcraft-teaser'?'svg':'jpg'}`);
 export const categories = ['All work','Museums & XR','Games','Education','Software & tools'];
 
 export function Eyebrow({children}:{children:React.ReactNode}) { return <div className="eyebrow"><span/> {children}</div>; }
