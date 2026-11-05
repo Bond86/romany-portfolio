@@ -1,0 +1,22 @@
+name: Refresh approved video metadata
+on:
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+      - run: node scripts/sync-videos.mjs
+        env:
+          YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
+      - name: Commit reviewed manifest updates
+        run: |
+          git config user.name "portfolio-media-bot"
+          git config user.email "portfolio-media-bot@users.noreply.github.com"
+          git add src/data/videos.json
+          git diff --cached --quiet || (git commit -m "Refresh approved video metadata" && git push)

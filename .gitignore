@@ -1,0 +1,11 @@
+node_modules/
+dist/
+.env*
+!.env.example
+tmp/
+docs/*-source.html
+docs/youtube-parsed.json
+docs/behance-*.html
+*.tar.gz
+
+.openai/

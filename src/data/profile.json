@@ -1,0 +1,39 @@
+{
+  "name":"Romany Samir",
+  "title":"Software Engineer · Unity Developer · Creative Technologist",
+  "location":"Cairo, Egypt / Remote",
+  "email":"rsks_86@yahoo.com",
+  "phone":"+20 103 350 2266",
+  "summary":"I build interactive software that connects people with ideas. My work spans Unity applications, games, immersive environments and educational tools — supported by a background in technical direction and hands-on delivery.",
+  "links":{"linkedin":"https://www.linkedin.com/in/rsks/","youtube":"https://www.youtube.com/@RomanySamirPortfolio-sp3jp/videos","website":"https://romanysamir.com/","behance":"https://www.behance.net/gallery/208532433/KSA"},
+  "experience":[
+    {"company":"Freelance / Self-Employed","role":"Software Engineer / Unity Developer","dates":"January 2023 – Present","period":"2023 — NOW","stack":["Unity","C#","XR","JSON / APIs"],"description":"Building interactive experiences, from museum applications and mobile-controlled 3D maps to puzzle games and reusable Unity tools.","details":["Develop cross-platform Unity applications, touchscreen navigation, multimedia galleries and 2D/3D maps.","Build configurable content systems using JSON and APIs, with remote content update workflows.","Design gameplay prototypes, level editors, UI components and reusable development tools.","Support technical planning, performance optimization and platform-specific delivery. Platform support varies by project."]},
+    {"company":"Prime Press Egypt","role":"Technical Director","dates":"August 2018 – December 2022","period":"2018 — 2022","stack":["Technical direction","Educational software","Moodle","Adobe AIR"],"description":"Led technical decisions and production for interactive educational products and virtual learning services across international markets.","details":["Managed estimation, asset preparation, production planning and technical implementation choices.","Led teams digitizing printed books into interactive activities, games, classroom tools and multimedia learning content.","Delivered training and supported Virtual Learning Environment implementation in Greece, Latin America, Egypt and the Middle East.","Contributed to products and services historically reaching more than 1,000 schools and approximately 500,000 students and teachers.","Evaluated production tools and technical candidates; supported pre-production through delivery."]},
+    {"company":"Prime Press Egypt","role":"Flash / ActionScript Developer","dates":"June 2017 – August 2018","period":"2017 — 2018","stack":["ActionScript 3","Adobe Animate","Interactive media"],"description":"Designed, animated and programmed interactive learning experiences, stories, readers, exercises and games.","details":["Combined planning, drawing, design, animation and ActionScript programming for educational media.","Developed interactive content and tools as part of a multidisciplinary production team."]},
+    {"company":"Elkhalig for Trade and Import","role":"IT Specialist & System Administrator","dates":"January 2017 – August 2017","period":"2017","stack":["Windows Server","Networks","IT support"],"description":"Administered workstations, networks and infrastructure; maintained security, backups and employee accounts.","details":["Installed and configured hardware, software and networks.","Monitored performance, applied upgrades and resolved infrastructure and end-user issues."]},
+    {"company":"Future Academy","role":"IT Specialist","dates":"February 2016 – February 2017","period":"2016 — 2017","stack":["IT operations","Technical support"],"description":"Provided institutional IT support, workstation setup, software updates and troubleshooting.","details":["Supported non-technical users and maintained hardware and software stability."]},
+    {"company":"TE Data","role":"Technical Support Representative","dates":"August 2016 – November 2016","period":"2016","stack":["Connectivity","Troubleshooting"],"description":"Diagnosed connectivity, hardware and software issues and guided customers through technical solutions.","details":["Handled support requests through calls, chat and email; coordinated with support teams."]}
+  ],
+  "education":[
+    {"school":"Cairo University","qualification":"Master’s studies · Computer Software Engineering","dates":"Started October 2023","note":"Completion status unconfirmed; no degree award claimed."},
+    {"school":"Cairo University","qualification":"Diploma of Software Engineering","dates":"October 2022 – June 2023","note":"Grade: Excellent"},
+    {"school":"Ain Shams University","qualification":"Bachelor of Commerce · Accounting","dates":"2010 – 2015","note":""}
+  ],
+  "certifications":[
+    {"name":"Moodle Administrator","issuer":"Moodle","date":"January 2023"},
+    {"name":"Foundations of Accessible eLearning","issuer":"LinkedIn","date":"January 2023"},
+    {"name":"ChatGPT Smart Learning","issuer":"Hamdan Bin Mohammed Smart University","date":"February 2023"},
+    {"name":"Digital Product Management: Modern Fundamentals","issuer":"University of Virginia","date":"February 2023"},
+    {"name":"EF SET English Certificate · 72/100, C2","issuer":"EF SET","date":"Issue date not documented"},
+    {"name":"MCSA: Windows Server 2012","issuer":"Microsoft","date":"October 2015 · Historical credential"},
+    {"name":"MCPS: Microsoft Certified Professional","issuer":"Microsoft","date":"October 2015 · Historical credential"}
+  ],
+  "skills":[
+    {"name":"Games & Unity engineering","description":"Gameplay, tools and systems built around real interaction.","items":["Unity","C#","Gameplay programming","Puzzle mechanics","Level editors","Game UI","Performance optimization"],"project":"pushcraft","depth":"Core practice"},
+    {"name":"Immersive & interactive","description":"Navigable spaces and interfaces for exhibitions and large displays.","items":["XR / VR / AR","Meta Quest","3D navigation","Touchscreen systems","Multimedia galleries","Cross-platform delivery"],"project":"interactive-museum","depth":"Project experience"},
+    {"name":"Learning & multimedia","description":"A foundation in educational content, classroom tools and learning platforms.","items":["Adobe Animate","ActionScript 3","Adobe AIR","Moodle / LMS","Interactive e-content","Accessibility principles"],"project":"educational-content","depth":"Extensive production experience"},
+    {"name":"Web & content systems","description":"Flexible interfaces and configurable content workflows.","items":["JavaScript","HTML5","CSS","JSON / APIs","WordPress","SuiteCRM","PHP basics"],"project":"html5-ebook","depth":"Supporting practice"},
+    {"name":"Technical leadership","description":"Turning requirements into coordinated, deliverable software.","items":["Technical direction","Production planning","Estimation","Team leadership","Product thinking","Client delivery"],"project":"virtual-learning","depth":"Leadership experience"}
+  ],
+  "languages":["Arabic — Native / bilingual","English — Professional working proficiency; EF SET C2 test result"]
+}
