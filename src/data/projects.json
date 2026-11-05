@@ -1,8 +1,8 @@
 [
   {
     "slug": "interactive-museum",
-    "title": "Spaces you can explore.",
-    "name": "Interactive Museum & Exhibition Application",
+    "title": "Museum experiences, built to explore.",
+    "name": "Prophet’s Biography Museum",
     "category": "Interactive Applications",
     "tags": [
       "XR / VR / AR",
@@ -16,7 +16,7 @@
     "published": true,
     "role": "Unity developer / Software engineer",
     "platform": "Cross-platform Unity; targets vary by deployment",
-    "summary": "A Unity application that brings maps, stories and multimedia into one navigable museum and exhibition experience.",
+    "summary": "Unity-based museum experiences combining touchscreens, interactive navigation and multimedia storytelling. Demonstrated in my KSA Behance showcase.",
     "challenge": "Bring spatial navigation and varied content together in an interface suited to interactive displays.",
     "solution": "Combine 2D/3D maps, information panels and multimedia galleries with touchscreen navigation and configurable content.",
     "features": [
@@ -27,10 +27,14 @@
       "Remote content updates",
       "Touchscreen navigation"
     ],
-    "implementation": "Documented work includes Unity/C#, JSON/API integration and remote content workflows. Client identity, dates and deployment-specific architecture are not published.",
-    "videos": [],
+    "implementation": "Built with Unity and C#, with interactive maps, multimedia interfaces and JSON/API-driven content workflows. The KSA showcase presents both visitor-facing displays and virtual navigation.",
+    "videos": [
+      "PtBtphgHb9n",
+      "Ctmsq2Uw6HS"
+    ],
     "visual": "museum",
-    "outcome": "An interactive application combining navigation and multimedia content. Public screenshots are not yet supplied."
+    "outcome": "Interactive exhibition content and navigation systems, demonstrated through real visitor displays and virtual environments.",
+    "image": "ksa-PtBtphgHb9n"
   },
   {
     "slug": "educational-content",
@@ -60,7 +64,7 @@
       "Classroom tools",
       "Numeracy and science exercises"
     ],
-    "implementation": "The r\u00e9sum\u00e9 documents Adobe Animate, ActionScript and Adobe AIR production. Technologies and platforms differ between products; video uploads do not establish project completion dates.",
+    "implementation": "The résumé documents Adobe Animate, ActionScript and Adobe AIR production. Technologies and platforms differ between products; video uploads do not establish project completion dates.",
     "videos": [
       "pBzIDb4jhnQ",
       "lKY5Vk5b3k4",
@@ -112,7 +116,7 @@
       "3D navigation"
     ],
     "status": "Professional project",
-    "featured": false,
+    "featured": true,
     "published": true,
     "role": "Unity developer",
     "platform": "Large display with mobile control over a local network",
@@ -126,9 +130,12 @@
       "Large-screen presentation"
     ],
     "implementation": "Unity is confirmed; network protocol, supported device matrix and deployment dates are not disclosed.",
-    "videos": [],
+    "videos": [
+      "QGKLWX9nWem"
+    ],
     "visual": "map",
-    "outcome": "A mobile-controlled map display application documented in the ATS r\u00e9sum\u00e9."
+    "outcome": "A mobile-controlled map display application documented in the ATS résumé.",
+    "image": "ksa-QGKLWX9nWem"
   },
   {
     "slug": "unity-tools",
@@ -157,7 +164,7 @@
       "Snap tools",
       "PDF integration prototypes"
     ],
-    "implementation": "Items are r\u00e9sum\u00e9-documented work, not claims of commercially released packages. Public demos and package links have not yet been supplied.",
+    "implementation": "Items are résumé-documented work, not claims of commercially released packages. Public demos and package links have not yet been supplied.",
     "videos": [],
     "visual": "tools",
     "outcome": "Reusable interface work and technical prototypes; no public asset-store release is claimed."
@@ -223,5 +230,36 @@
       "-2f-1pTzPbU"
     ],
     "outcome": "A publicly viewable demonstration; release dates and usage metrics are not verified."
+  },
+  {
+    "slug": "immersive-walkthroughs",
+    "title": "Explore a space before you’re there.",
+    "name": "3D Walkthroughs & VR Exploration",
+    "category": "XR / VR / AR",
+    "tags": [
+      "Unity",
+      "3D navigation",
+      "VR"
+    ],
+    "status": "Public demonstrations",
+    "featured": false,
+    "published": true,
+    "role": "Interactive 3D developer",
+    "platform": "Unity / immersive 3D demonstrations",
+    "image": "ksa-TxiQpTfssKy",
+    "summary": "Interactive 3D demonstrations exploring interior walkthroughs and immersive building-model navigation.",
+    "challenge": "Make digital spaces easy to inspect and navigate through direct interaction.",
+    "solution": "Create navigable environments and 3D exploration experiences, demonstrated in the public KSA portfolio.",
+    "features": [
+      "Interactive interior navigation",
+      "3D space exploration",
+      "Immersive building-model demonstration"
+    ],
+    "implementation": "Unity-based interior navigation and an immersive building-model demonstration, presented through the original KSA portfolio videos.",
+    "videos": [
+      "TxiQpTfssKy",
+      "GYfPDkxUJX9"
+    ],
+    "outcome": "Two public demonstrations showing interior walkthroughs and VR model exploration."
   }
 ]

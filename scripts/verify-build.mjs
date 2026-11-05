@@ -5,7 +5,8 @@ const base=process.env.BASE_PATH||'/';
 function walk(p){return readdirSync(p,{withFileTypes:true}).flatMap(e=>e.isDirectory()?walk(join(p,e.name)):[join(p,e.name)]);}
 const files=walk('dist');
 const html=files.filter(f=>f.endsWith('.html')&&!f.endsWith('404.html'));
-assert.equal(html.length,16);
+const projects=JSON.parse(readFileSync('src/data/projects.json','utf8')).filter(p=>p.published);
+assert.equal(html.length,9+projects.length);
 for(const file of html){
  const s=readFileSync(file,'utf8');
  assert.match(s,/<title>[^<]+<\/title>/);assert.match(s,/rel="canonical"/);assert.match(s,/application\/ld\+json/);

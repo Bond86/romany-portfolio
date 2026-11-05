@@ -1,4 +1,28 @@
 [
- {"name":"KSA","url":"https://www.behance.net/gallery/208532433/KSA","label":"Educational media · KSA","description":"A visual work reference supplied by Romany. View the original project on Behance.","verifiedMedia":false},
- {"name":"Greek","url":"https://www.behance.net/gallery/208533259/Greek","label":"Educational media · Greek","description":"A visual work reference supplied by Romany. View the original project on Behance.","verifiedMedia":false}
+  {
+    "name": "KSA",
+    "url": "https://www.behance.net/gallery/208532433/KSA",
+    "label": "Museum & interactive experiences",
+    "description": "Five demonstrations: museum interfaces, mobile-controlled 3D maps, virtual exhibitions, interior walkthroughs and VR exploration.",
+    "verifiedMedia": true,
+    "image": "media/projects/behance-ksa.png",
+    "videos": [
+      "PtBtphgHb9n",
+      "QGKLWX9nWem",
+      "Ctmsq2Uw6HS",
+      "TxiQpTfssKy",
+      "GYfPDkxUJX9"
+    ],
+    "published": "2024-09-23"
+  },
+  {
+    "name": "Greek",
+    "url": "https://www.behance.net/gallery/208533259/Greek",
+    "label": "Educational platforms · Greece",
+    "description": "Educational web platform work presented with Prime Press, PP Reads and Prime Press Portal references.",
+    "verifiedMedia": true,
+    "image": "media/projects/behance-greek.png",
+    "videos": [],
+    "published": "2024-09-23"
+  }
 ]

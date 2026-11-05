@@ -1,0 +1,3 @@
+import { ArrowUpRight, Globe2 } from 'lucide-react';
+import { Tags } from '../main';
+export default function MuseumContext(){return <section className="museum-context"><div><Globe2 size={25}/><h2>The museum network.</h2></div><p>The museum’s official directory lists locations in Saudi Arabia, Morocco, Senegal and Mauritania. The demonstrations on this page show my KSA portfolio work.</p><Tags items={['Saudi Arabia','Morocco','Senegal','Mauritania']}/><a className="inline-link" href="https://med.ethaf.com/ar/museums" target="_blank" rel="noreferrer">Official museum locations <ArrowUpRight size={17}/></a></section>;}

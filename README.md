@@ -2,7 +2,7 @@
 
 Live website: https://bond86.github.io/romany-portfolio/
 
-A responsive React + TypeScript + Vite portfolio with a lazy-loaded Three.js hero, seven project case studies, thirteen verified YouTube demonstrations, searchable work and skills, career timeline, online CV, two generated PDFs, light/dark themes and static route metadata.
+A responsive React + TypeScript + Vite portfolio with a media-led editorial homepage, eight project case studies, thirteen verified YouTube demonstrations and five original Behance/Adobe films, searchable work and skills, career timeline, online CV, two generated PDFs, light/dark themes and static route metadata.
 
 ## Run
 
@@ -27,7 +27,7 @@ The production website is in `dist/`. Do not open `index.html` directly from the
 - `src/data/profile.json`: canonical profile, contact, career, skills, education, certifications and languages. Website and both generated PDFs read this file.
 - `src/data/projects.json`: public case studies. Add a record following the existing shape. Categories, search, technology filters, routes, related projects and sitemap update automatically.
 - `src/data/videos.json`: curated verified videos and project mappings. IDs must be real; dates are upload dates.
-- `src/data/behance.json`: supplied Behance references. Replace editorial cards only after approved original assets are available.
+- `src/data/behance.json`: supplied Behance references. Original project covers and verified video mappings are included.
 - Private and unverified drafts are excluded from this public repository.
 - `public/media/projects/`: actual local thumbnails and future approved project assets.
 
@@ -70,7 +70,7 @@ The manual **Refresh approved video metadata** workflow reads a GitHub Actions s
 
 ## Design and accessibility
 
-Graphite backgrounds, restrained cyan accents, Manrope/DM Sans typography and a procedural modular world. No stock screenshots or fabricated project media. WebGL has a CSS fallback; motion respects reduced-motion preferences and pauses offscreen. Video players are created only after activation, using YouTube’s privacy-enhanced domain. Native dialogs support focus containment and Escape. Contact creates a mail draft rather than pretending to submit a form.
+Warm paper backgrounds, forest green, yellow accents and Manrope/DM Sans typography. The homepage leads with actual project footage. No stock screenshots or fabricated project media. Motion respects reduced-motion preferences. No WebGL dependency is loaded. Video players are created only after activation, using YouTube’s privacy-enhanced domain or the original Adobe player for Behance films. Native dialogs support focus containment and Escape. Contact creates a mail draft rather than pretending to submit a form.
 
 Validation: strict TypeScript, ESLint, content/media/PDF tests, static-route verification and browser checks across mobile, tablet and desktop. No Lighthouse score is claimed.
 
