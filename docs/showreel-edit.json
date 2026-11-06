@@ -157,13 +157,19 @@
     },
     {
       "image": "pushcraft-key-art.jpg",
-      "frames": 105,
+      "frames": 45,
       "label": "PUSHCRAFT",
-      "detail": "Independent 3D puzzle game / In development"
+      "detail": "Independent 3D puzzle game"
+    },
+    {
+      "image": "pushcraft-gameplay.jpg",
+      "frames": 75,
+      "label": "PUSHCRAFT",
+      "detail": "Gameplay preview / In development"
     },
     {
       "image": "../showreel/pushcraft-teaser.png",
-      "frames": 45,
+      "frames": 30,
       "label": "",
       "detail": ""
     },
@@ -174,5 +180,5 @@
       "detail": ""
     }
   ],
-  "note": "Pushcraft appears as promotional artwork and a short coming-soon card."
+  "note": "Pushcraft appears as promotional artwork, an original gameplay still, and a short coming-soon card."
 }

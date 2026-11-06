@@ -89,8 +89,9 @@ cuts=[
  {'id':'-2f-1pTzPbU','fraction':.7,'frames':60,'label':'CLASSIC E-BOOKS','detail':'Multimedia reading experiences'},
  {'id':'ZexIK1AG1e0','fraction':.7,'frames':60,'label':'PHONICS + BLENDING','detail':'Stepping Stone / Classroom learning'},
  {'id':'nTWKmcNGJts','fraction':.7,'frames':60,'label':'INTERACTIVE STORIES','detail':'Storyland / Puzzles and games'},
- {'image':'pushcraft-key-art.jpg','frames':105,'label':'PUSHCRAFT','detail':'Independent 3D puzzle game / In development'},
- {'image':'../showreel/pushcraft-teaser.png','frames':45,'label':'','detail':''},
+ {'image':'pushcraft-key-art.jpg','frames':45,'label':'PUSHCRAFT','detail':'Independent 3D puzzle game'},
+ {'image':'pushcraft-gameplay.jpg','frames':75,'label':'PUSHCRAFT','detail':'Gameplay preview / In development'},
+ {'image':'../showreel/pushcraft-teaser.png','frames':30,'label':'','detail':''},
  {'still':'outro.png','frames':90,'label':'','detail':''}
 ]
 assert sum(c['frames'] for c in cuts)==1800
@@ -110,7 +111,7 @@ def render(index_cut):
     if cut['label']:
         (WORK/f'label-{index}.txt').write_text(cut['label'],encoding='utf-8')
         (WORK/f'detail-{index}.txt').write_text(cut['detail'],encoding='utf-8')
-        vf+=f',drawbox=x=0:y=626:w=1280:h=94:color=0x142d27@0.94:t=fill,drawbox=x=42:y=648:w=5:h=48:color=0xe7ef93:t=fill,drawtext=fontfile=tmp/showreel/title.ttf:textfile=tmp/showreel/label-{index}.txt:fontcolor=white:fontsize=27:x=66:y=641,drawtext=fontfile=tmp/showreel/title.ttf:textfile=tmp/showreel/detail-{index}.txt:fontcolor=0xc7dfcf:fontsize=17:x=66:y=680'
+        vf+=f',drawbox=x=0:y=626:w=1280:h=94:color=0x142d27@0.90:t=fill,drawbox=x=42:y=648:w=5:h=48:color=0xe7ef93:t=fill,drawtext=fontfile=tmp/showreel/title.ttf:textfile=tmp/showreel/label-{index}.txt:fontcolor=white:fontsize=29:x=66:y=640,drawtext=fontfile=tmp/showreel/title.ttf:textfile=tmp/showreel/detail-{index}.txt:fontcolor=0xc7dfcf:fontsize=19:x=66:y=679'
     else:vf+=f',fade=t=in:st=0:d=0.18,fade=t=out:st={seconds-.18}:d=0.18'
     vf+=',format=yuv420p'
     output=WORK/f'cut-{index:02d}.mp4'
@@ -144,15 +145,15 @@ final=OUTPUT/'romany-samir-showreel.mp4'
 run(['-f','concat','-safe','0','-i',WORK/'concat.txt','-i',WORK/'original-score.wav','-map','0:v:0','-map','1:a:0','-c:v','copy','-c:a','aac','-b:a','128k','-ac','2','-t','60','-movflags','+faststart',final])
 assert abs(duration(final)-60)<.06
 run(['-v','error','-xerror','-i',final,'-f','null','-'])
-manifest={'durationSeconds':60,'frames':1800,'fps':30,'resolution':'1280x720','audio':'Original code-synthesized instrumental pulse; source audio removed','cuts':cuts,'note':'Pushcraft appears as promotional artwork and a short coming-soon card.'}
+manifest={'durationSeconds':60,'frames':1800,'fps':30,'resolution':'1280x720','audio':'Original code-synthesized instrumental pulse; source audio removed','cuts':cuts,'note':'Pushcraft appears as promotional artwork, an original gameplay still, and a short coming-soon card.'}
 (ROOT/'docs/showreel-edit.json').write_text(json.dumps(manifest,indent=2,ensure_ascii=False)+'\n',encoding='utf-8')
-for second in [2.5,10.5,25,38,49,53.5]:run(['-ss',second,'-i',final,'-frames:v','1',WORK/f'final-{second}.jpg'])
+for second in [2.5,10.5,25,38,49,54.5]:run(['-ss',second,'-i',final,'-frames:v','1',WORK/f'final-{second}.jpg'])
 poster=Image.new('RGB',(1280,720),'#142d27')
-for i,second in enumerate([2.5,10.5,25,38,49,53.5]):
+for i,second in enumerate([2.5,10.5,25,38,49,54.5]):
     im=Image.open(WORK/f'final-{second}.jpg');im=im.resize((426,240),Image.Resampling.LANCZOS);poster.paste(im,((i%3)*426,(i//3)*240))
 draw=ImageDraw.Draw(poster);draw.rectangle((0,480,1280,720),fill='#142d27');draw.text((58,523),'ROMANY SAMIR',font=ImageFont.truetype(str(FONT),57),fill='#fffef9');draw.text((60,614),'60-SECOND SHOWREEL / SELECTED WORK',font=ImageFont.truetype(str(FONT),25),fill='#e7ef93')
 poster.save(OUTPUT/'romany-samir-showreel-poster.jpg',quality=92,optimize=True)
 review=Image.new('RGB',(1280,720),'white')
-for i,second in enumerate([2.5,10.5,25,38,49,53.5]):review.paste(Image.open(WORK/f'final-{second}.jpg').resize((426,360)),((i%3)*426,(i//3)*360))
+for i,second in enumerate([2.5,10.5,25,38,49,54.5]):review.paste(Image.open(WORK/f'final-{second}.jpg').resize((426,360)),((i%3)*426,(i//3)*360))
 review.save(WORK/'final-review.jpg',quality=92)
 print(f'FINAL: {final}; 60.00 seconds; {final.stat().st_size/1024/1024:.1f} MiB; full decode passed.',flush=True)

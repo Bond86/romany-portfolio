@@ -2,7 +2,7 @@
 
 Output: `public/media/showreel/romany-samir-showreel.mp4` — exactly 60.00 seconds, 1,800 frames at 30 fps, 1280 × 720 H.264 with AAC stereo audio, fast-start metadata, approximately 8.5 MiB.
 
-The edit uses excerpts from all 18 verified portfolio demonstrations: five KSA/Adobe films and thirteen YouTube educational demonstrations. Pushcraft appears as promotional key art and a short coming-soon card.
+The edit uses excerpts from all 18 verified portfolio demonstrations: five KSA/Adobe films and thirteen YouTube educational demonstrations. Pushcraft appears as promotional key art, the original gameplay still and a short coming-soon card.
 
 The instrumental pulse was synthesized specifically for this edit with code; no third-party music or original source-video audio is included. The opening and closing cards, lower-thirds and poster use the portfolio’s forest-green/paper/yellow identity. The detailed frame-by-frame edit list is in `showreel-edit.json`.
 

@@ -8,5 +8,5 @@ test('the reel is a real one-minute MP4 with all verified source demonstrations'
  const timescale=data.readUInt32BE(mvhd+16);const ticks=data.readUInt32BE(mvhd+20);assert.equal(ticks/timescale,60);
  const edit=JSON.parse(readFileSync('docs/showreel-edit.json','utf8'));assert.equal(edit.frames,1800);assert.equal(edit.cuts.reduce((sum,c)=>sum+c.frames,0),1800);
  const videos=JSON.parse(readFileSync('src/data/videos.json','utf8'));for(const v of videos)assert.ok(edit.cuts.some(c=>c.id===v.id));
- assert.equal(edit.cuts.filter(c=>c.image).length,2);assert.ok(existsSync(`public/${reel.thumbnail}`));
+ assert.equal(edit.cuts.filter(c=>c.image).length,3);assert.ok(existsSync(`public/${reel.thumbnail}`));
 });
