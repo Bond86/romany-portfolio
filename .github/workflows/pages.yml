@@ -27,7 +27,7 @@ jobs:
         run: npm run build
         env:
           BASE_PATH: ${{ format('{0}/', steps.pages.outputs.base_path) }}
-          SITE_URL: ${{ steps.pages.outputs.origin }}
+          SITE_URL: https://${{ steps.pages.outputs.host }}
       - uses: actions/upload-pages-artifact@v3
         with:
           path: dist
