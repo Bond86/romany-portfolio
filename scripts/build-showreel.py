@@ -68,19 +68,19 @@ title_card(OUTPUT/'pushcraft-teaser.png','PUSHCRAFT','Coming soon.','IN DEVELOPM
 title_card(WORK/'intro.png','ROMANY SAMIR','Software Engineer / Unity Developer','MUSEUMS   /   XR   /   EDUCATION   /   GAMES')
 title_card(WORK/'outro.png','LET’S BUILD.','Software engineering. Interactive experiences.','romanysamir.com   /   rsks_86@yahoo.com')
 
-# Exact frame counts: intro 60 + Adobe 600 + YouTube 780 + stills 300 + outro 60 = 1800.
+# Exact frame counts: intro 30 + Adobe 675 + YouTube 855 + Pushcraft 150 + outro 90 = 1800.
 cuts=[
- {'still':'intro.png','frames':60,'label':'','detail':''},
- {'id':'PtBtphgHb9n','fraction':.4,'frames':120,'label':'MUSEUM SYSTEMS','detail':'Interactive exhibits / Prophet’s Biography Museum'},
- {'id':'Ctmsq2Uw6HS','fraction':.4,'frames':120,'label':'VIRTUAL EXHIBITIONS','detail':'3D navigation / Interactive content'},
- {'id':'QGKLWX9nWem','fraction':.7,'frames':120,'label':'MOBILE-CONTROLLED 3D MAPS','detail':'Large-display interaction / Unity'},
- {'id':'GYfPDkxUJX9','fraction':.7,'frames':120,'label':'IMMERSIVE EXPLORATION','detail':'VR / Interactive 3D models'},
- {'id':'TxiQpTfssKy','fraction':.4,'frames':120,'label':'3D WALKTHROUGHS','detail':'Navigable spaces / Unity'},
- {'id':'U5lkFF6gRvc','fraction':.15,'frames':60,'label':'PRIME PRESS E-KIT','detail':'Android / Interactive classroom tools'},
- {'id':'5iDkEmcCmVw','fraction':.4,'frames':60,'label':'CLASSROOM TOOLS','detail':'Prime Press E-Kit / V1 demonstration'},
- {'id':'pBzIDb4jhnQ','fraction':.4,'frames':60,'label':'EDUCATIONAL GAMES','detail':'Journeys / Learning through play'},
- {'id':'lKY5Vk5b3k4','fraction':.4,'frames':60,'label':'PHONICS','detail':'Games / Interactive learning content'},
- {'id':'sP_ZczrpTdM','fraction':.4,'frames':60,'label':'STORIES + PUZZLES','detail':'Crime Scene / Interactive activities'},
+ {'still':'intro.png','frames':30,'label':'','detail':''},
+ {'id':'PtBtphgHb9n','fraction':.4,'frames':135,'label':'MUSEUM SYSTEMS','detail':'Interactive exhibits / Prophet’s Biography Museum'},
+ {'id':'Ctmsq2Uw6HS','fraction':.4,'frames':135,'label':'VIRTUAL EXHIBITIONS','detail':'3D navigation / Interactive content'},
+ {'id':'QGKLWX9nWem','fraction':.7,'frames':135,'label':'MOBILE-CONTROLLED 3D MAPS','detail':'Large-display interaction / Unity'},
+ {'id':'GYfPDkxUJX9','fraction':.7,'frames':135,'label':'IMMERSIVE EXPLORATION','detail':'VR / Interactive 3D models'},
+ {'id':'TxiQpTfssKy','fraction':.4,'frames':135,'label':'3D WALKTHROUGHS','detail':'Navigable spaces / Unity'},
+ {'id':'U5lkFF6gRvc','fraction':.15,'frames':75,'label':'PRIME PRESS E-KIT','detail':'Android / Interactive classroom tools'},
+ {'id':'5iDkEmcCmVw','fraction':.4,'frames':75,'label':'CLASSROOM TOOLS','detail':'Prime Press E-Kit / V1 demonstration'},
+ {'id':'pBzIDb4jhnQ','fraction':.4,'frames':75,'label':'EDUCATIONAL GAMES','detail':'Journeys / Learning through play'},
+ {'id':'lKY5Vk5b3k4','fraction':.4,'frames':75,'label':'PHONICS','detail':'Games / Interactive learning content'},
+ {'id':'sP_ZczrpTdM','fraction':.4,'frames':75,'label':'STORIES + PUZZLES','detail':'Crime Scene / Interactive activities'},
  {'id':'nPnWZgPQ_1I','fraction':.4,'frames':60,'label':'YOUNG LEARNERS','detail':'Story-based games / Puzzle activities'},
  {'id':'XSZCX61SM8w','fraction':.4,'frames':60,'label':'SOCIAL LEARNING','detail':'Learn while you play'},
  {'id':'eerSTcCXSF0','fraction':.15,'frames':60,'label':'NUMERACY','detail':'Interactive games / Exercises'},
@@ -89,10 +89,9 @@ cuts=[
  {'id':'-2f-1pTzPbU','fraction':.7,'frames':60,'label':'CLASSIC E-BOOKS','detail':'Multimedia reading experiences'},
  {'id':'ZexIK1AG1e0','fraction':.7,'frames':60,'label':'PHONICS + BLENDING','detail':'Stepping Stone / Classroom learning'},
  {'id':'nTWKmcNGJts','fraction':.7,'frames':60,'label':'INTERACTIVE STORIES','detail':'Storyland / Puzzles and games'},
- {'image':'../showreel/pushcraft-teaser.png','frames':120,'label':'PUSHCRAFT','detail':'Coming soon / In development'},
- {'image':'../showreel/pushcraft-teaser.png','frames':90,'label':'PUSHCRAFT','detail':'Coming soon / In development'},
- {'image':'../showreel/pushcraft-teaser.png','frames':90,'label':'PUSHCRAFT','detail':'Coming soon / In development'},
- {'still':'outro.png','frames':60,'label':'','detail':''}
+ {'image':'pushcraft-key-art.jpg','frames':105,'label':'PUSHCRAFT','detail':'Independent 3D puzzle game / In development'},
+ {'image':'../showreel/pushcraft-teaser.png','frames':45,'label':'','detail':''},
+ {'still':'outro.png','frames':90,'label':'','detail':''}
 ]
 assert sum(c['frames'] for c in cuts)==1800
 
@@ -107,7 +106,7 @@ def render(index_cut):
         inputs=['-loop','1','-i',path]
     vf='scale=1280:720:force_original_aspect_ratio=decrease:force_divisible_by=2,pad=1280:720:(ow-iw)/2:(oh-ih)/2:color=0x142d27,setsar=1,fps=30'
     if 'image' in cut:
-        vf+=",zoompan=z='min(zoom+0.00018,1.025)':x='iw/2-iw/zoom/2':y='ih/2-ih/zoom/2':d=1:s=1280x720:fps=30"
+        vf+=",zoompan=z='min(zoom+0.00055,1.065)':x='iw/2-iw/zoom/2':y='ih/2-ih/zoom/2':d=1:s=1280x720:fps=30"
     if cut['label']:
         (WORK/f'label-{index}.txt').write_text(cut['label'],encoding='utf-8')
         (WORK/f'detail-{index}.txt').write_text(cut['detail'],encoding='utf-8')
@@ -115,8 +114,6 @@ def render(index_cut):
     else:vf+=f',fade=t=in:st=0:d=0.18,fade=t=out:st={seconds-.18}:d=0.18'
     vf+=',format=yuv420p'
     output=WORK/f'cut-{index:02d}.mp4'
-    if '--reuse-cuts' in sys.argv and output.exists() and cut.get('still')!='outro.png' and 'image' not in cut:
-        return output
     run([*inputs,'-an','-vf',vf,'-frames:v',cut['frames'],'-c:v','libx264','-preset','fast','-crf','21','-maxrate','4M','-bufsize','8M','-threads','2','-video_track_timescale','15360',output])
     print(f'Rendered {index+1}/{len(cuts)}: {cut.get("label") or cut.get("still")}',flush=True)
     return output
@@ -147,15 +144,15 @@ final=OUTPUT/'romany-samir-showreel.mp4'
 run(['-f','concat','-safe','0','-i',WORK/'concat.txt','-i',WORK/'original-score.wav','-map','0:v:0','-map','1:a:0','-c:v','copy','-c:a','aac','-b:a','128k','-ac','2','-t','60','-movflags','+faststart',final])
 assert abs(duration(final)-60)<.06
 run(['-v','error','-xerror','-i',final,'-f','null','-'])
-manifest={'durationSeconds':60,'frames':1800,'fps':30,'resolution':'1280x720','audio':'Original code-synthesized instrumental pulse; source audio removed','cuts':cuts,'note':'Pushcraft is represented only by non-revealing coming-soon title cards.'}
+manifest={'durationSeconds':60,'frames':1800,'fps':30,'resolution':'1280x720','audio':'Original code-synthesized instrumental pulse; source audio removed','cuts':cuts,'note':'Pushcraft appears as promotional artwork and a short coming-soon card.'}
 (ROOT/'docs/showreel-edit.json').write_text(json.dumps(manifest,indent=2,ensure_ascii=False)+'\n',encoding='utf-8')
-for second in [2.5,10.5,23,38,49,53]:run(['-ss',second,'-i',final,'-frames:v','1',WORK/f'final-{second}.jpg'])
+for second in [2.5,10.5,25,38,49,53.5]:run(['-ss',second,'-i',final,'-frames:v','1',WORK/f'final-{second}.jpg'])
 poster=Image.new('RGB',(1280,720),'#142d27')
-for i,second in enumerate([2.5,10.5,23,38,49,53]):
+for i,second in enumerate([2.5,10.5,25,38,49,53.5]):
     im=Image.open(WORK/f'final-{second}.jpg');im=im.resize((426,240),Image.Resampling.LANCZOS);poster.paste(im,((i%3)*426,(i//3)*240))
 draw=ImageDraw.Draw(poster);draw.rectangle((0,480,1280,720),fill='#142d27');draw.text((58,523),'ROMANY SAMIR',font=ImageFont.truetype(str(FONT),57),fill='#fffef9');draw.text((60,614),'60-SECOND SHOWREEL / SELECTED WORK',font=ImageFont.truetype(str(FONT),25),fill='#e7ef93')
 poster.save(OUTPUT/'romany-samir-showreel-poster.jpg',quality=92,optimize=True)
 review=Image.new('RGB',(1280,720),'white')
-for i,second in enumerate([2.5,10.5,23,38,49,53]):review.paste(Image.open(WORK/f'final-{second}.jpg').resize((426,360)),((i%3)*426,(i//3)*360))
+for i,second in enumerate([2.5,10.5,25,38,49,53.5]):review.paste(Image.open(WORK/f'final-{second}.jpg').resize((426,360)),((i%3)*426,(i//3)*360))
 review.save(WORK/'final-review.jpg',quality=92)
 print(f'FINAL: {final}; 60.00 seconds; {final.stat().st_size/1024/1024:.1f} MiB; full decode passed.',flush=True)

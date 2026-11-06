@@ -7,14 +7,14 @@
   "cuts": [
     {
       "still": "intro.png",
-      "frames": 60,
+      "frames": 30,
       "label": "",
       "detail": ""
     },
     {
       "id": "PtBtphgHb9n",
       "fraction": 0.4,
-      "frames": 120,
+      "frames": 135,
       "label": "MUSEUM SYSTEMS",
       "detail": "Interactive exhibits / Prophet’s Biography Museum",
       "sourceStartSeconds": 61.96
@@ -22,7 +22,7 @@
     {
       "id": "Ctmsq2Uw6HS",
       "fraction": 0.4,
-      "frames": 120,
+      "frames": 135,
       "label": "VIRTUAL EXHIBITIONS",
       "detail": "3D navigation / Interactive content",
       "sourceStartSeconds": 15.984
@@ -30,7 +30,7 @@
     {
       "id": "QGKLWX9nWem",
       "fraction": 0.7,
-      "frames": 120,
+      "frames": 135,
       "label": "MOBILE-CONTROLLED 3D MAPS",
       "detail": "Large-display interaction / Unity",
       "sourceStartSeconds": 38.08
@@ -38,7 +38,7 @@
     {
       "id": "GYfPDkxUJX9",
       "fraction": 0.7,
-      "frames": 120,
+      "frames": 135,
       "label": "IMMERSIVE EXPLORATION",
       "detail": "VR / Interactive 3D models",
       "sourceStartSeconds": 97.006
@@ -46,7 +46,7 @@
     {
       "id": "TxiQpTfssKy",
       "fraction": 0.4,
-      "frames": 120,
+      "frames": 135,
       "label": "3D WALKTHROUGHS",
       "detail": "Navigable spaces / Unity",
       "sourceStartSeconds": 12.8
@@ -54,7 +54,7 @@
     {
       "id": "U5lkFF6gRvc",
       "fraction": 0.15,
-      "frames": 60,
+      "frames": 75,
       "label": "PRIME PRESS E-KIT",
       "detail": "Android / Interactive classroom tools",
       "sourceStartSeconds": 14.562
@@ -62,7 +62,7 @@
     {
       "id": "5iDkEmcCmVw",
       "fraction": 0.4,
-      "frames": 60,
+      "frames": 75,
       "label": "CLASSROOM TOOLS",
       "detail": "Prime Press E-Kit / V1 demonstration",
       "sourceStartSeconds": 132.708
@@ -70,7 +70,7 @@
     {
       "id": "pBzIDb4jhnQ",
       "fraction": 0.4,
-      "frames": 60,
+      "frames": 75,
       "label": "EDUCATIONAL GAMES",
       "detail": "Journeys / Learning through play",
       "sourceStartSeconds": 58.116
@@ -78,7 +78,7 @@
     {
       "id": "lKY5Vk5b3k4",
       "fraction": 0.4,
-      "frames": 60,
+      "frames": 75,
       "label": "PHONICS",
       "detail": "Games / Interactive learning content",
       "sourceStartSeconds": 93.196
@@ -86,7 +86,7 @@
     {
       "id": "sP_ZczrpTdM",
       "fraction": 0.4,
-      "frames": 60,
+      "frames": 75,
       "label": "STORIES + PUZZLES",
       "detail": "Crime Scene / Interactive activities",
       "sourceStartSeconds": 93.792
@@ -156,29 +156,23 @@
       "sourceStartSeconds": 94.129
     },
     {
-      "image": "../showreel/pushcraft-teaser.png",
-      "frames": 120,
+      "image": "pushcraft-key-art.jpg",
+      "frames": 105,
       "label": "PUSHCRAFT",
-      "detail": "Coming soon / In development"
+      "detail": "Independent 3D puzzle game / In development"
     },
     {
       "image": "../showreel/pushcraft-teaser.png",
-      "frames": 90,
-      "label": "PUSHCRAFT",
-      "detail": "Coming soon / In development"
-    },
-    {
-      "image": "../showreel/pushcraft-teaser.png",
-      "frames": 90,
-      "label": "PUSHCRAFT",
-      "detail": "Coming soon / In development"
+      "frames": 45,
+      "label": "",
+      "detail": ""
     },
     {
       "still": "outro.png",
-      "frames": 60,
+      "frames": 90,
       "label": "",
       "detail": ""
     }
   ],
-  "note": "Pushcraft is represented only by non-revealing coming-soon title cards."
+  "note": "Pushcraft appears as promotional artwork and a short coming-soon card."
 }

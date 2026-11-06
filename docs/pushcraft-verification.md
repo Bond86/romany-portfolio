@@ -1,3 +1,3 @@
 # Pushcraft
 
-In development. Public presentation intentionally limited to Coming soon teaser cards. Details and original images are withheld from the current site.
+In development. The site shows promotional artwork and a brief description of the independent 3D puzzle game.
